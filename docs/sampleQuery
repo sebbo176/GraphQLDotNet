@@ -1,0 +1,13 @@
+query getHuman($idValue: String!) {
+  human(id: $idValue) {
+    homePlanet
+    name
+    id
+    appearsIn
+    friends {
+      name
+    }
+  }
+}
+
+{"idValue": "1"}
